@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".auth.login.AddUserInfoActivity"
+        android:background="@color/primary_bg_color">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/nexis_toolbar_auth"/>
+
+        <ImageView
+            android:id="@+id/profilePicture"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="@dimen/nxs_device_padding"
+            android:contentDescription="@string/image"
+            android:src="@drawable/nxs_gojo"
+            android:background="@drawable/nxs_profile_picture_bg"
+            android:scaleType="centerCrop"
+            android:clipToOutline="true"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/changeProfileBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/nxs_device_padding_2"
+            android:text="@string/change_profile_picture"
+            android:textColor="@color/primary_accent_color"
+            android:textSize="13sp"
+            android:fontFamily="@font/poppins_medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profilePicture"/>
+
+        <View
+            android:id="@+id/actionDivider"
+            style="@style/HorizontalDivider"
+            android:layout_marginTop="@dimen/nxs_device_padding_inner"
+            app:layout_constraintTop_toBottomOf="@+id/changeProfileBtn"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/nameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/nxs_device_padding"
+            android:layout_marginTop="@dimen/nxs_device_padding"
+            android:text="@string/your_name"
+            android:textColor="@color/primary_text_color"
+            android:textSize="12sp"
+            android:letterSpacing="0.05"
+            android:fontFamily="@font/poppins_regular"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/actionDivider"/>
+
+        <EditText
+            android:id="@+id/nameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="name"
+            android:hint="@string/full_name"
+            android:inputType="textAutoComplete"
+            android:textSize="14sp"
+            android:textColor="@color/primary_text_color"
+            android:textColorHint="@color/secondary_text_color"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginHorizontal="@dimen/nxs_device_padding"
+            android:backgroundTint="@color/primary_text_color"
+            app:layout_constraintStart_toStartOf="@+id/nameTV"
+            app:layout_constraintTop_toBottomOf="@+id/nameTV"/>
+
+        <TextView
+            android:id="@+id/nameWarningInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp25"
+            android:fontFamily="@font/poppins_medium"
+            android:letterSpacing="0.03"
+            app:drawableLeftCompat="@drawable/nxs_info_warning_icon"
+            android:text="This is not correct format for name"
+            android:textColor="@color/warning_color"
+            android:textSize="10sp"
+            android:drawablePadding="@dimen/nxs_device_padding_short"
+            android:visibility="visible"
+            tools:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameET"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/userNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/nxs_device_padding"
+            android:layout_marginTop="@dimen/nxs_device_big_padding"
+            android:text="Username*"
+            android:textColor="@color/primary_text_color"
+            android:textSize="12sp"
+            android:letterSpacing="0.05"
+            android:fontFamily="@font/poppins_regular"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameET"/>
+
+        <EditText
+            android:id="@+id/userNameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User name"
+            android:inputType=""
+            android:textSize="14sp"
+            android:textColor="@color/primary_text_color"
+            android:textColorHint="@color/secondary_text_color"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginHorizontal="@dimen/nxs_device_padding"
+            android:backgroundTint="@color/primary_text_color"
+            app:layout_constraintStart_toStartOf="@+id/userNameTV"
+            app:layout_constraintTop_toBottomOf="@+id/userNameTV"/>
+
+        <TextView
+            android:id="@+id/userNameWarning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp25"
+            android:fontFamily="@font/poppins_medium"
+            android:letterSpacing="0.03"
+            tools:text="This is not correct format for username"
+            android:textColor="@color/warning_color"
+            android:textSize="10sp"
+            android:drawableLeft="@drawable/nxs_info_warning_icon"
+            android:drawablePadding="@dimen/nxs_device_padding_short"
+            android:visibility="gone"
+            tools:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userNameET"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/bioTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/nxs_device_padding"
+            android:layout_marginTop="@dimen/nxs_device_big_padding"
+            android:text="@string/bio"
+            android:textColor="@color/primary_text_color"
+            android:textSize="12sp"
+            android:letterSpacing="0.05"
+            android:fontFamily="@font/poppins_regular"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userNameET"/>
+
+        <EditText
+            android:id="@+id/bioET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/write_about_yourself"
+            android:importantForAutofill="no"
+            android:inputType="textAutoCorrect"
+            android:textSize="14sp"
+            android:textColor="@color/primary_text_color"
+            android:textColorHint="@color/secondary_text_color"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginHorizontal="@dimen/nxs_device_padding"
+            android:visibility="gone"
+            android:backgroundTint="@color/primary_text_color"
+            app:layout_constraintStart_toStartOf="@+id/bioTV"
+            app:layout_constraintTop_toBottomOf="@+id/bioTV"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/nxs_device_padding"
+            app:layout_constraintStart_toStartOf="@+id/bioTV"
+            app:layout_constraintTop_toBottomOf="@+id/bioTV">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/bio"
+                android:textColor="@color/primary_text_color"
+                android:focusedSearchResultHighlightColor="@color/primary_text_color  "
+                android:textColorHint="@color/secondary_text_color"
+                android:backgroundTint="@color/primary_text_color"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

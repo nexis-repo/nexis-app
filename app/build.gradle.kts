@@ -33,6 +33,13 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+
+    buildFeatures{
+        //noinspection DataBindingWithoutKapt
+        dataBinding = true
+        viewBinding = true
+    }
+
 }
 
 dependencies {
@@ -45,4 +52,13 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    // Groupie dependency for Nested RecyclerView
+//    implementation(libs.groupie)
+
+    // Shimmer effect (little flashy)
+    implementation("com.facebook.shimmer:shimmer:0.5.0")
+
+    // Image Rendering || Glide
+    implementation("com.github.bumptech.glide:glide:4.15.0")
 }

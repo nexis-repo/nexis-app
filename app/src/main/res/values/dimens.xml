@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="nxs_device_padding">20dp</dimen>
+    <dimen name="nxs_device_padding_2">15dp</dimen>
+    <dimen name="nxs_device_padding_inner">10dp</dimen>
+    <dimen name="nxs_device_padding_for_card">14dp</dimen>
+    <dimen name="nxs_device_padding_short">5dp</dimen>
+    <dimen name="nxs_card_padding">8dp</dimen>
+
+    <dimen name="nxs_device_big_padding">30dp</dimen>
+    <dimen name="nxs_activity_title_height">65dp</dimen>
+    <dimen name="dp25">25dp</dimen>
+</resources>

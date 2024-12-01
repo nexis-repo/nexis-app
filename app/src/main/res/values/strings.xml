@@ -1,3 +1,19 @@
 <resources>
-    <string name="app_name">NexisApp</string>
+    <string name="app_name">Nexis</string>
+    <string name="logo">Logo</string>
+    <string name="welcome">Welcome</string>
+    <string name="welcome_info">where news meets clarity.\nStay informed, stay engaged, \nand
+        explore the stories \nthat shape our world.</string>
+    <string name="get_started">Get Started</string>
+    <string name="choose_your_option">Choose Your Option</string>
+    <string name="sign_up">Sign up</string>
+    <string name="read_news">Read News</string>
+    <string name="continue_with_google">Continue With Google</string>
+    <string name="image">image</string>
+    <string name="save">Save</string>
+    <string name="change_profile_picture">Change Profile Picture</string>
+    <string name="full_name">Full name</string>
+    <string name="your_name">Name*</string>
+    <string name="write_about_yourself">Write about yourself</string>
+    <string name="bio">Bio</string>
 </resources>

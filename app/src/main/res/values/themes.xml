@@ -6,4 +6,60 @@
     </style>
 
     <style name="Theme.NexisApp" parent="Base.Theme.NexisApp" />
+
+    <!--    Bottom Sheet Style for Nexis-->
+    <style name="NxsCustomDialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="NxsCommonCustomBtn" parent="TextAppearance.AppCompat">
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:textColor">@color/inverted_text_color</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:background">@drawable/nxs_common_btn_bg</item>
+        <item name="drawableEndCompat">@drawable/nxs_double_right_arrow</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">45dp</item>
+        <item name="android:paddingRight">45dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">6dp</item>
+    </style>
+
+    <style name="NxsCommonOutlineCustomBtn" parent="TextAppearance.AppCompat">
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:textColor">@color/primary_accent_color</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:background">@drawable/nxs_common_btn_outline_bg</item>
+        <item name="drawableEndCompat">@drawable/nxs_double_right_arrow_blue</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">45dp</item>
+        <item name="android:paddingRight">45dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">6dp</item>
+    </style>
+
+    <style name="NxsCommonCustomSignUpBtn" parent="TextAppearance.AppCompat">
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:textColor">@color/inverted_text_color</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:background">@drawable/nxs_common_btn_bg</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">45dp</item>
+        <item name="android:paddingRight">45dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">6dp</item>
+    </style>
+
+    <style name="HorizontalDivider" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/primary_text_color</item>
+    </style>
+
 </resources>
