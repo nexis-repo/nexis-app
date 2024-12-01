@@ -20,8 +20,5 @@ class NexisMainActivity : AppCompatActivity() {
     private fun initView() {
         // change toolbar title
         binding.toolbar.toolbarTitle.text = "Nexis"
-
-        // Changed the textView Value for the main page
-        binding.text1.text = "Hello Ankit Singh"
     }
 }

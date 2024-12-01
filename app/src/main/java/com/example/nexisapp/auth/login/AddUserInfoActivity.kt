@@ -1,5 +1,6 @@
 package com.example.nexisapp.auth.login
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
@@ -20,6 +21,14 @@ class AddUserInfoActivity : AppCompatActivity() {
     private fun initView() {
         binding.toolbar.toolbarTitle.text = "Add user Details"
 
+        binding.toolbar.saveActionBtn.isEnabled = true
+        binding.toolbar.saveActionBtn.setOnClickListener {
+            openAddPass()
+        }
+    }
 
+    private fun openAddPass() {
+        val intent = Intent(this, AddPasswordActivity::class.java)
+        startActivity(intent)
     }
 }

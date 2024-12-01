@@ -9,23 +9,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".NexisMainActivity"
-        android:background="@color/primary_bg_color">
+        android:background="@drawable/nxs_luffy">
 
         <include
             android:id="@+id/toolbar"
-            layout="@layout/nexis_toolbar_auth"
+            layout="@layout/nexis_toolbar"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
 
-        <TextView
-            android:id="@+id/text1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

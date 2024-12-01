@@ -90,7 +90,7 @@
             android:textColor="@color/warning_color"
             android:textSize="10sp"
             android:drawablePadding="@dimen/nxs_device_padding_short"
-            android:visibility="visible"
+            android:visibility="gone"
             tools:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/nameET"
@@ -169,29 +169,9 @@
             android:textColorHint="@color/secondary_text_color"
             android:fontFamily="@font/poppins_regular"
             android:layout_marginHorizontal="@dimen/nxs_device_padding"
-            android:visibility="gone"
             android:backgroundTint="@color/primary_text_color"
             app:layout_constraintStart_toStartOf="@+id/bioTV"
             app:layout_constraintTop_toBottomOf="@+id/bioTV"/>
-
-
-        <com.google.android.material.textfield.TextInputLayout
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/nxs_device_padding"
-            app:layout_constraintStart_toStartOf="@+id/bioTV"
-            app:layout_constraintTop_toBottomOf="@+id/bioTV">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/bio"
-                android:textColor="@color/primary_text_color"
-                android:focusedSearchResultHighlightColor="@color/primary_text_color  "
-                android:textColorHint="@color/secondary_text_color"
-                android:backgroundTint="@color/primary_text_color"/>
-        </com.google.android.material.textfield.TextInputLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -16,4 +16,7 @@
     <string name="your_name">Name*</string>
     <string name="write_about_yourself">Write about yourself</string>
     <string name="bio">Bio</string>
+    <string name="add_password">Add password</string>
+    <string name="re_type_password">Re-Type password</string>
+    <string name="add_new_password">Add new password</string>
 </resources>
