@@ -1,12 +1,12 @@
-package com.example.nexisapp.auth.login
+package com.a3.nexisapp.auth.login
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import com.example.nexisapp.NexisMainActivity
-import com.example.nexisapp.R
-import com.example.nexisapp.databinding.ActivityAddPasswordBinding
+import com.a3.nexisapp.NexisMainActivity
+import com.a3.nexisapp.R
+import com.a3.nexisapp.databinding.ActivityAddPasswordBinding
 
 class AddPasswordActivity : AppCompatActivity() {
 

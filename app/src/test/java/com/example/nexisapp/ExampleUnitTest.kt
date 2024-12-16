@@ -1,4 +1,4 @@
-package com.example.nexisapp
+package com.a3.nexisapp
 
 import org.junit.Test
 

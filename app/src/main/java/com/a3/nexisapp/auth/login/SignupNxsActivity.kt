@@ -1,11 +1,11 @@
-package com.example.nexisapp.auth.login
+package com.a3.nexisapp.auth.login
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import com.example.nexisapp.R
-import com.example.nexisapp.databinding.ActivityNxsSignupBinding
+import com.a3.nexisapp.R
+import com.a3.nexisapp.databinding.ActivityNxsSignupBinding
 
 
 class SignupNxsActivity : AppCompatActivity() {

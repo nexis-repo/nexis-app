@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.nexisapp"
+    namespace = "com.a3.nexisapp"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.nexisapp"
+        applicationId = "com.a3.nexisapp"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -61,4 +61,8 @@ dependencies {
 
     // Image Rendering || Glide
     implementation("com.github.bumptech.glide:glide:4.15.0")
+
+    // Google auth dependency
+    implementation("com.google.android.gms:play-services-auth:20.7.0")
+
 }

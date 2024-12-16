@@ -1,12 +1,12 @@
-package com.example.nexisapp.auth.welcome_pages
+package com.a3.nexisapp.auth.welcome_pages
 
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
-import com.example.nexisapp.NexisMainActivity
-import com.example.nexisapp.auth.login.SignupNxsActivity
-import com.example.nexisapp.R
+import com.a3.nexisapp.NexisMainActivity
+import com.a3.nexisapp.auth.login.SignupNxsActivity
+import com.a3.nexisapp.R
 import com.google.android.material.bottomsheet.BottomSheetDialog
 
 

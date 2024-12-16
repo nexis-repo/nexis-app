@@ -1,9 +1,9 @@
-package com.example.nexisapp
+package com.a3.nexisapp
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import com.example.nexisapp.databinding.ActivityMainNexisBinding
+import com.a3.nexisapp.databinding.ActivityMainNexisBinding
 
 class NexisMainActivity : AppCompatActivity() {
 

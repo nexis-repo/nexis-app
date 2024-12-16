@@ -1,12 +1,12 @@
-package com.example.nexisapp.auth.welcome_pages
+package com.a3.nexisapp.auth.welcome_pages
 
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import com.example.nexisapp.R
-import com.example.nexisapp.databinding.ActivityNexisWelcomeBinding
+import com.a3.nexisapp.R
+import com.a3.nexisapp.databinding.ActivityNexisWelcomeBinding
 import com.facebook.shimmer.Shimmer
 
 class WelcomeNexisActivity : AppCompatActivity() {
